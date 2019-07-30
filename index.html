@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Train Scheduler</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+   
+
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Pridi:400,500,600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap" rel="stylesheet">
+
+    <!-- link to jquery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <!-- Firebase References -->
+    <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-databse.js"></script>
+
+    <!-- Moment.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.0/moment.min.js"></script>
+</head>
+
+<body>
+    <header class="headImg">
+        <h1 class="mainTitle">Plan Your Travels</h1>
+        <h1 class="mainTitle" id="subtitle">Never be late!</h1>
+        <h1 class="mainTitle" id="subtitle2">(Please note that trains run from their first train time until the end of
+            the day.)</h1>
+    </header>
+    <section class="clock">
+        <h1 class='clockTitle'>Current Time</h1>
+        <div class="currentTime">00:00</div>
+    </section>
+
+    <section class="trainSchedule container-fluid">
+        <div class="row">
+            <div class="col-1"></div>
+            <table class="col-10" id="timeTable">
+                <tr class="tableTitle">
+                    <th class="tableTitle">Train Name</th>
+                    <th class="tableTitle ">Destination</th>
+                    <th class="tableTitle ">First Train of the Day</th>
+                    <th class="tableTitle ">Frequency (Min)</th>
+                    <th class="tableTitle ">Next Arrival</th>
+                    <th class="tableTitle ">Minutes Away</th>
+                </tr>
+            </table>
+            <div class="col-1"></div>
+        </div>
+    </section>
+
+    <section class="trainSubmission container-fluid">
+        <div class="row">
+            <div class="col-2"></div>
+            <h1 class="formTitle">Include Your Travel Plans Here</h1>
+            <div class="col-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-2"></div>
+
+            <form class="col-8 container-fluid">
+                <div class="form-group">
+                    <label for="trainName">Train Name:</label>
+                    <input type="trainName" class="form-control" id="trainNameInput">
+                </div>
+
+                <div class="form-group">
+                    <label for="trainDestination">Train Destination:</label>
+                    <input type="trainDest" class="form-control" id="trainDestinationInput">
+                </div>
+
+                <div class="form-group">
+                    <label for="firstTrainTime">First Train Time (HH:mm - Military Time):</label>
+                    <input type="firstTrainTime" class="form-control" id="trainTimeInput">
+                </div>
+
+                <div class="form-group">
+                    <label for="frequency">Frequency (minutes):</label>
+                    <input type="frequency" class="form-control" id="frequencyInput">
+                </div>
+
+                <div class="row">
+                    <button type="submit" class="btn btn-primary" id="submit-button">Submit</button>
+                </div>
+            </form>
+            <div class="col-2"></div>
+        </div>
+    </section>
+
+
+
+    <script type="text/javascript" src="javascript/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+/* font-family: 'Pridi', serif; */
+
+
+/* font-family: 'Noto Sans', sans-serif; */
+
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Header */
+
+.headImg {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .5)), url(../imgs/trainback.jpg);
+    height: 300px;
+    background-size: cover;
+}
+
+.mainTitle {
+    text-align: center;
+    color: white;
+    font-family: 'Pridi', serif;
+    font-size: 80px;
+    font-weight: 700;
+    padding-top: 30px;
+}
+
+#subtitle2 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#subtitle {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+
+/* CurrentTime */
+
+.clock {
+    text-align: center;
+    background: rgba(1, 50, 67, .6);
+    color: white;
+    font-family: 'Pridi', serif;
+    font-size: 80px;
+    font-weight: 500;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.clockTitle {
+    font-size: 40px;
+    padding-top: 5px;
+}
+
+
+/* Train Display */
+
+.trainSchedule {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.timeTable {
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    margin: 30px auto;
+    padding: 10px 20px;
+    border-collapse: collapse;
+    width: 100%;
+    color: black;
+}
+
+.timeTable td,
+.timeTable th {
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+}
+
+.timeTable tr:nth-child(even) {
+    background-color: rgba(1, 50, 67, .3);
+    color: black;
+}
+
+.timeTable tr:hover {
+    background-color: rgba(1, 50, 67, .5);
+}
+
+.tableTitle {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgba(1, 50, 67, 1);
+    color: white;
+    border: 1px solid #ddd;
+    padding: 8px 10px;
+}
+
+.submission {
+    font-family: 'Noto Sans', sans-serif;
+    padding: 10px 10px;
+    text-align: center;
+}
+
+
+/* Form */
+
+.trainSubmission {
+    background: rgba(1, 50, 67, .6);
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.formTitle {
+    text-align: center;
+    color: rgb(233, 247, 252);
+    font-family: 'Pridi', serif;
+    font-size: 30px;
+    font-weight: 400;
+    padding-top: 30px;
+    margin: 10px;
+}
+
+label {
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.form-group {
+    color: rgba(1, 50, 67, 1);
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.btn {
+    width: 80%;
+    background: rgb(233, 247, 252);
+    color: rgba(1, 50, 67, 1);
+    margin: 10px auto;
+    font-family: 'Pridi', serif;
+    font-weight: 500;
+}
+
+.btn:hover {
+    width: 80%;
+    color: white;
+    background: rgba(1, 50, 67, 1);
+    margin: 10px auto;
+    font-family: 'Pridi', serif;
+    font-weight: 500;
+}
